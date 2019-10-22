@@ -1,0 +1,46 @@
+{
+  "name": "async-idb",
+  "version": "1.0.0",
+  "description": "A promise based (async) wrapper for the IndexedDB API",
+  "config": {
+    "serve": {
+      "domain": "localhost",
+      "path": "./",
+      "port": 8080
+    },
+    "dir": {
+      "js": "./"
+    }
+  },
+  "private": true,
+  "scripts": {
+    "test": "eslint ${npm_package_config_dir_js}",
+    "fix": "eslint ${npm_package_config_dir_js} --fix",
+    "start": "http-server ${npm_package_config_serve_path} -p ${npm_package_config_serve_port} -a ${npm_package_config_serve_domain} -o"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shgysk8zer0/async-idb.git"
+  },
+  "keywords": [
+    "indexed-db",
+    "async",
+    "ECMAScript",
+    "ECMAScript2018",
+    "ES6",
+    "modules"
+  ],
+  "author": "Chris Zuber <shgysk8zer0@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shgysk8zer0/async-idb/issues"
+  },
+  "homepage": "https://github.com/shgysk8zer0/async-idb#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-async-await": "0.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "http-server": "^0.11.1"
+  }
+}
